@@ -1,0 +1,20 @@
+{
+  "orientation": "flat-top",
+  "edge_construction": "trapezoid",
+  "edge_note": "Inner radius (r - w/2), outer radius (r + w/2). Corners on radial lines. No round caps.",
+  "sizes": {
+    "xl": 80,
+    "lg": 56,
+    "md": 44,
+    "sm": 32,
+    "xs": 20
+  },
+  "ccw_edge_order": [
+    { "index": 0, "vertices": [4, 5], "label": "top" },
+    { "index": 1, "vertices": [3, 4], "label": "upper-left" },
+    { "index": 2, "vertices": [2, 3], "label": "lower-left" },
+    { "index": 3, "vertices": [1, 2], "label": "bottom" },
+    { "index": 4, "vertices": [0, 1], "label": "lower-right" },
+    { "index": 5, "vertices": [5, 0], "label": "upper-right" }
+  ]
+}

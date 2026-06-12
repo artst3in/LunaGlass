@@ -1,0 +1,24 @@
+{
+  "unit": 4,
+  "note": "All spacing is a multiple of 4px",
+  "scales": {
+    "xs": 4,
+    "sm": 8,
+    "md": 12,
+    "lg": 16,
+    "xl": 24,
+    "2xl": 32,
+    "3xl": 48
+  },
+  "radius": {
+    "sm": 4,
+    "md": 8,
+    "lg": 12,
+    "xl": 16,
+    "pill": 9999
+  },
+  "panel_padding": 14,
+  "screen_padding": 24,
+  "hex_gap": 4,
+  "section_gap": 28
+}

@@ -1,0 +1,12 @@
+{
+  "family": "Inter, sans-serif",
+  "license": "OFL",
+  "scales": {
+    "display": { "size": 22, "weight": 700 },
+    "header": { "size": 16, "weight": 700 },
+    "label": { "size": 14, "weight": 600 },
+    "body": { "size": 13, "weight": 400 },
+    "secondary": { "size": 11, "weight": 400 },
+    "caption": { "size": 9, "weight": 400, "tracking": 3, "transform": "uppercase" }
+  }
+}

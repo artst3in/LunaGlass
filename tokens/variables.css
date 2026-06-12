@@ -1,0 +1,72 @@
+/* LunaGlass CSS Custom Properties */
+
+:root {
+  /* Colors */
+  --lg-bg: #050508;
+  --lg-surface: #0A1214;
+  --lg-panel: #0D1A1E;
+  --lg-border: #1A3A40;
+  --lg-primary: #00FFFF;
+  --lg-primary-dim: #007A7A;
+  --lg-text: #E0F0F0;
+  --lg-text-dim: #6A8A8A;
+  --lg-danger: #FF0000;
+  --lg-success: #00FF00;
+  --lg-warning: #FF9800;
+
+  /* Typography */
+  --lg-font: 'Inter', sans-serif;
+  --lg-display: 700 22px/1.2 var(--lg-font);
+  --lg-header: 700 16px/1.3 var(--lg-font);
+  --lg-label: 600 14px/1.4 var(--lg-font);
+  --lg-body: 400 13px/1.5 var(--lg-font);
+  --lg-secondary: 400 11px/1.4 var(--lg-font);
+  --lg-caption: 400 9px/1.3 var(--lg-font);
+
+  /* Spacing */
+  --lg-space-xs: 4px;
+  --lg-space-sm: 8px;
+  --lg-space-md: 12px;
+  --lg-space-lg: 16px;
+  --lg-space-xl: 24px;
+  --lg-space-2xl: 32px;
+  --lg-space-3xl: 48px;
+
+  /* Radius */
+  --lg-radius-sm: 4px;
+  --lg-radius-md: 8px;
+  --lg-radius-lg: 12px;
+  --lg-radius-xl: 16px;
+  --lg-radius-pill: 9999px;
+
+  /* Effects */
+  --lg-blur: blur(12px);
+  --lg-glow: 0 0 20px rgba(0, 255, 255, 0.08);
+  --lg-glow-active: 0 0 20px rgba(0, 255, 255, 0.15);
+  --lg-glass-bg: rgba(13, 26, 30, 0.85);
+  --lg-glass-border: 1px solid var(--lg-border);
+  --lg-glass-inset: inset 0 1px 0 rgba(0, 255, 255, 0.06);
+}
+
+/* Base reset */
+.lunaglass {
+  background: var(--lg-bg);
+  color: var(--lg-text);
+  font: var(--lg-body);
+}
+
+/* Glass panel */
+.lg-panel {
+  background: var(--lg-glass-bg);
+  border: var(--lg-glass-border);
+  border-radius: var(--lg-radius-lg);
+  padding: 14px;
+  backdrop-filter: var(--lg-blur);
+  -webkit-backdrop-filter: var(--lg-blur);
+  box-shadow: var(--lg-glow), var(--lg-glass-inset);
+}
+
+.lg-panel--active {
+  box-shadow: var(--lg-glow-active), var(--lg-glass-inset);
+  border-color: rgba(0, 255, 255, 0.4);
+}

@@ -1,0 +1,45 @@
+{
+  "bg":           "#050508",
+  "surface":      "#001214",
+  "panel":        "#001A1E",
+  "border":       "rgba(0,255,255,0.20)",
+  "primary":      "#00FFFF",
+  "primary-dim":  "#007A7A",
+  "text":         "#F0F0F0",
+  "text-dim":     "#999999",
+  "danger":       "#FF0000",
+  "danger-soft":  "#FF5555",
+  "success":      "#00FF00",
+  "warning":      "#FF9800",
+  "info":         "#2196F3",
+  "accent":       "#FFD700",
+
+  "_comment_surface": "R channel zeroed (was 0A1214). Rule: no red in a cyan palette, even near-black.",
+  "_comment_panel":   "R channel zeroed (was 0D1A1E). Same rule.",
+  "_comment_border":  "Was #1A3A40 dark teal — off-palette, forbidden. Now faint cyan hairline.",
+  "_comment_text":    "Was #E0F0F0 cyan-tinted white. Now neutral off-white (R=G=B). No cyan in body text.",
+  "_comment_text_dim":"Was #6A8A8A grey-teal. Now neutral grey (R=G=B). No teal in secondary text.",
+  "_comment_danger_soft": "Non-life-threatening trouble — low battery, offline, transport down. Distinct from danger (pure red = life-safety only).",
+  "_comment_info":    "Informational state — initialising, connecting, progress. Material blue, not cyan, so it reads as status not accent.",
+  "_comment_accent":  "Gold. Functional only (pinned notes, shield tier). NOT brand colour.",
+
+  "glow":         "rgba(0,255,255,0.15)",
+  "glow-soft":    "rgba(0,255,255,0.08)",
+
+  "glass-fill":       "rgba(0,26,30,0.85)",
+  "glass-border":     "rgba(0,255,255,0.12)",
+  "hex-grid-stroke":  "rgba(0,255,255,0.10)",
+  "scan-line":        "rgba(0,255,255,0.20)",
+  "data-rain":        "rgba(0,160,176,0.40)",
+
+  "hex-grad-center":  "rgba(0,255,255,0.70)",
+  "hex-grad-mid":     "rgba(0,220,220,0.50)",
+  "hex-grad-edge":    "rgba(0,122,122,0.30)",
+
+  "shield-bronze":    "#CD7F32",
+  "shield-silver":    "#9AA4AD",
+  "shield-gold":      "#FFD700",
+  "shield-cyan":      "#00FFFF",
+
+  "_comment_shield": "Five shield tiers by lit-node count. Bronze (1) → Silver (2-8) → Gold (9) → Cyan (max). Cyan = brand colour worn only by users who maxed every node."
+}

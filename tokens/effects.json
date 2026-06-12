@@ -1,0 +1,14 @@
+{
+  "breathing_glow":   { "priority": 1, "duration_ms": 3000, "easing": "ease-in-out", "repeat": "infinite" },
+  "frosted_glass":    { "priority": 1, "blur_px": 12, "fill": "glass-fill", "border": "glass-border", "min_platform": "Android 12+" },
+  "hex_gradient":     { "priority": 2, "type": "radial", "stops": ["hex-grad-center", "hex-grad-mid", "hex-grad-edge"] },
+  "double_ring":      { "priority": 2, "gap_px": 3, "glow_when": "active" },
+  "edge_heat":        { "priority": 3, "mode": "all-edges-simultaneous", "duration_ms": 1000, "vibrate": "burst_on_complete", "_comment": "Was CCW-from-top over 3s. Changed to 1s simultaneous for SOS hold." },
+  "hex_grid_bg":      { "priority": 3, "size_px": 40, "stroke": "hex-grid-stroke" },
+  "edge_lighting":    { "priority": 4, "model": "fresnel-grazing-angle", "source": "accelerometer-tilt", "smoothing": 0.28, "deadband": 0.0025, "_comment": "Cyan rim intensifies at grazing angles. Zero cost when disabled (sensor reference-counted)." },
+  "scan_line":        { "priority": 4, "period_ms": 30000, "alpha": "scan-line", "_comment": "Was 10s. Now 30s — subtler, less distracting." },
+  "glass_sheen":      { "priority": 4, "source": "accelerometer-tilt", "smoothing": 0.28, "rate": "SENSOR_DELAY_UI", "deadband": 0.0025, "_comment": "Tilt-reactive highlight sliding across glass surfaces. Reference-counted: zero battery when off-screen." },
+  "perspective_3d":   { "priority": 5, "experimental": true, "source": "accelerometer-tilt", "_comment": "Pane tilt giving depth impression. Behind experimental toggle." },
+  "hex_assembly":     { "priority": 4, "direction": "center-out", "trigger": "tab-switch" },
+  "data_rain":        { "priority": 5, "particle_size_px": 4, "alpha": "data-rain", "optional": true, "default_off": true }
+}
